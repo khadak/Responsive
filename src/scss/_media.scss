@@ -1,0 +1,218 @@
+@media (min-width: 768px) {
+  .col-img__head {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+  }
+  .img-wrap {
+    &__head {
+      margin: 0 0 0 -20px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .wrap {
+    padding-left: 30px;
+  }
+
+  .row__reverse {
+    flex-direction: row-reverse;
+    background: transparent;
+    overflow: hidden;
+    .col-md-9 {
+      padding-right: 0;
+    }
+    .col-md-3 {
+      padding: 0;
+    }
+    &.blurb {
+      padding: 0;
+    }
+    p:last-child {
+      padding: 0;
+      margin: 0;
+    }
+    .img {
+      &__heading-caption {
+        position: relative;
+        background: $body-bg;
+        left: 0;
+        top: -15px;
+        width: 500px;
+        padding: 15px 15px 15px 0;
+        transform: translateX(-100%);
+      }
+    }
+  }
+
+  .col__reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    background: transparent;
+    overflow: hidden;
+
+    .img-wrap__video img {
+      margin-top: -40px;
+    }
+
+    .blurb {
+      background: $body-bg;
+      padding: 0;
+      margin: 0;
+      .img__heading-caption {
+        position: absolute;
+        background: $body-bg;
+        left: 0;
+        top: 0;
+        width: 500px;
+        padding: 15px 15px 15px 0;
+        transform: translateX(-100%);
+      }
+    }
+  }
+
+  .header {
+    margin-bottom: 30px;
+    .row {
+      flex: 1;
+    }
+    &__row {
+      display: flex;
+      align-items: center;
+    }
+    .nav {
+      flex-flow: wrap;
+    }
+    .navbar-collapse {
+      justify-content: flex-end;
+      .nav {
+        li {
+          position: relative;
+          margin: 0 10px;
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: 5px;
+            width: 0;
+            height: 6px;
+            background: $brand-color;
+            transition: all .3s ease-in;
+          }
+          &:hover {
+            &:before {
+              width: 100%;
+              transition: all .3s ease-in;
+            }
+          }
+        }
+        a {
+          padding: 10px;
+          position: relative;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    display: flex;
+    .side-bar {
+      position: static;
+      width: 100%;
+      max-width: 300px;
+      nav {
+        position: sticky;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        padding-right: 80px;
+        transform: translateY(-50%);
+
+        .nav {
+          display: flex;
+          flex-direction: column;
+        }
+        &:before {
+          content: "Descripton";
+          font-size: 3rem;
+          color: #fff;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%) translateX(-30%) rotate(-90deg);
+        }
+
+      }
+      .nav-item {
+        background: transparent;
+        position: relative;
+        text-align: right;
+        padding: 20px 0;
+
+        &:before {
+          content: "";
+          width: 0;
+          height: 10px;
+          background: #ffe79c;
+          position: absolute;
+          z-index: -1;
+          left: 0;
+          bottom: 30px;
+          transition: width 0.3s ease-in;
+        }
+
+        &--active {
+          &:before {
+            width: 100%;
+            transition: width 0.3s ease-in;
+          }
+        }
+
+        .active {
+          background: transparent;
+          color: #000;
+        }
+      }
+    }
+    .container-fluid {
+      max-width: 900px !important;
+    }
+  }
+
+  .blurb__img {
+    .btn__download {
+      top: initial;
+      bottom: 0;
+    }
+    .caption__rotate {
+      transform: translateX(-50%) translateY(-50%) rotate(-90deg);;
+      opacity: 0;
+      top: 100%;
+    }
+  }
+
+  .footer {
+    h3 {
+      display: inline-block;
+      margin: 0 0 100px;
+    }
+    &__nav {
+      ul {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .blurb {
+    padding: 15px 0;
+  }
+
+  .list-item {
+    &__grid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+}

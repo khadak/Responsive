@@ -1,0 +1,144 @@
+.img-wrap {
+  &__head {
+    margin: -30px 0 15px;
+    img {
+      width: 100%;
+    }
+  }
+  &__normal {
+    margin: 0 0 15px;
+  }
+  &__video {
+    position: relative;
+    margin: 0 -15px ;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+    &:hover {
+      &:before {
+        background: rgba(0, 0, 0, 0);
+      }
+    }
+  }
+}
+
+.price {
+  &__old{
+    text-decoration: line-through;
+    color: $light-text;
+  }
+  &__new {
+
+  }
+}
+
+.blurb__img {
+  position: relative;
+  margin:  0 0 $bottom-space;
+  overflow: hidden;
+  .btn__download {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $brand-color;
+    color: #fff;
+    padding: 30px 40px;
+    transform: translateX(100%);
+  }
+  .blurb{
+    margin: 0;
+  }
+  .img__thumb {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 50%;
+    max-width: 350px;
+    transform: translateX(-100%);
+  }
+  .hidden-md-down {
+    .caption__rotate {
+      &:before {
+        display: none;
+      }
+    }
+  }
+  .caption__rotate {
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+
+    white-space: nowrap;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    top: 32%;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 150px;
+      vertical-align: middle;
+      margin-right: 5px;
+      border: 1px solid #000;
+    }
+  }
+  .img__mob-max {
+    overflow: hidden;
+    padding-right: 0;
+    height: 740px;
+
+    img {
+      max-width: 740px;
+    }
+  }
+}
+
+.dr-policy {
+  font-size: 1.8rem;
+  display: flex;
+  margin: 0 0 15px;
+  &__text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.7rem;
+    margin: 0 15px 5px 0;
+  }
+}
+
+.add-card {
+  display: flex;
+  margin: 15px 0 0;
+  white-space: nowrap;
+  &__sum {
+    padding:10px 10px;
+    background: $light-shade;
+    &:before {
+      content: "-";
+      display: inline-block;
+      vertical-align: middle;
+      padding:0 20px;
+    }
+    &:after {
+      content: "+";
+      display: inline-block;
+      vertical-align: middle;
+      padding:0  20px;
+    }
+
+  }
+  &__action {
+    background: $brand-color;
+    padding:10px 40px;
+    color: #fff;
+    &:hover {
+      text-decoration: none;
+      background: #f3c00e;
+      color: #fff;
+      transition: all 0.3s ease-in;
+    }
+  }
+}

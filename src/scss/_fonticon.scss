@@ -1,0 +1,29 @@
+.fa {
+  &.fa-star {
+    color: $light-shade;
+  }
+  &.checked {
+    color:  $brand-color
+  }
+  &.fa--blurb {
+    border-radius: 50%;
+    background: $light-shade;
+    padding: 10px;
+  }
+  &.fa--color{
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 5px;
+    &__option1 {
+      background: #ddd4a9;
+    }
+    &__option2 {
+      background: #1a1a1a;
+    }
+    &__option3 {
+      background: transparent;
+      color: transparent;
+      border: 1px solid #000;
+    }
+  }
+}
