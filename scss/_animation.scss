@@ -1,0 +1,27 @@
+.animation-add {
+  &.row__reverse , &.col__reverse .blurb  {
+    .img__heading-caption {
+      transform: translateX(0);
+      transition: all 0.3s ease-in;
+    }
+  }
+}
+
+.blurb__img {
+  &.animation-add {
+    .btn__download, .img__thumb {
+      transform: translateX(0);
+      transition: all 0.3s ease-in;
+      transition-delay: .8s;
+    }
+    .btn__download {
+      transition-delay: 1s;
+    }
+    .caption__rotate {
+      opacity: 1;
+      transition: all 0.3s ease-in;
+      transition-delay: 1.3s;
+      top: 32%;
+    }
+  }
+}

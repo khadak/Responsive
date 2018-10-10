@@ -1,0 +1,15 @@
+.side-bar {
+  padding-bottom: 40px;
+  position: sticky;
+  transition: all .3s ease-in;
+  top: 0;
+  z-index: 10;
+  .nav-item {
+    background: #fff;
+    .active {
+      border-radius: 0;
+      background: $brand-color;
+      color: #fff;
+    }
+  }
+}

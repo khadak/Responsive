@@ -1,0 +1,20 @@
+.header {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .fa {
+      padding: 5px;
+    }
+  }
+}
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-link {
+  display: block;
+  padding: 0.5em 0;
+}

@@ -1,0 +1,28 @@
+.list-item {
+  margin: 0 0 $bottom-space;
+  text-align: center;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  h4 {
+    font-size: 1.1rem;
+  }
+  .col-6 {
+    padding: 0;
+    max-width: 100%;
+  }
+  &__img {
+    background: #fafafa;
+    padding: 15px;
+  }
+  &__content {
+    background: #fff;
+    padding: 15px;
+  }
+  &__grid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
