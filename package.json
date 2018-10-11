@@ -9,11 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6"
+    "bootstrap": "^4.0.0-alpha.6",
+    "css-mqpacker": "^7.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.0",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-htmlclean": "^2.7.22",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.1"
